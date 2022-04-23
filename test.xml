@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>test</Name>
+  <Repository>jufy111/test</Repository>
+  <Registry>https://hub.docker.com/r/gregyankovoy/lftp-mirror//Dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/jufy111/test</Support>
+  <Project/>
+  <Overview>This is a Test.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/jufy111/test/test.xml</TemplateURL>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650685277</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mirrors and removes files from a remote lftp folder to a local folder.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/lftp-mirror</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>22</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>REMOTE_DIR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>LFTP_PARTS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>LFTP_FILES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Key 1" Target="HOST" Default="" Mode="" Description="Container Variable: HOST" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 2" Target="PORT" Default="22" Mode="" Description="Container Variable: PORT" Type="Variable" Display="always" Required="false" Mask="false">22</Config>
+  <Config Name="Key 3" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 4" Target="REMOTE_DIR" Default="" Mode="" Description="Container Variable: REMOTE_DIR" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Key 5" Target="LFTP_PARTS" Default="1" Mode="" Description="Container Variable: LFTP_PARTS" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Key 6" Target="LFTP_FILES" Default="1" Mode="" Description="Container Variable: LFTP_FILES" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Key 7" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 8" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/Appdata/lftp-mirror" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/Appdata/lftp-mirror</Config>
+</Container>
